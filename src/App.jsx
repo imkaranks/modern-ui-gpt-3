@@ -5,6 +5,7 @@ import Sponsors from './containers/Sponsors';
 import WhatGPT3 from './containers/WhatGPT3';
 import Features from './containers/Features';
 import Possibilities from './containers/Possibilities';
+import Register from './containers/Register';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <WhatGPT3 />
         <Features />
         <Possibilities />
+        <Register />
       </main>
     </>
   );
