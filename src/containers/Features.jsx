@@ -6,7 +6,7 @@ function Features() {
     <section className='py-16' aria-labelledby='gpt3__features-title'>
       <div className="w-11/12 max-w-7xl mx-auto grid gap-4 sm:grid-cols-2">
         <div>
-          <h2 className='max-w-[426px] text-gradient text-[30px] leading-[45px] font-extrabold' id="gpt3__features-title">
+          <h2 className='max-w-[426px] text-gradient text-[30px] leading-[45px] tracking-tighter font-extrabold' id="gpt3__features-title">
             The Future is Now and You Just Need To Realize It. Step into Future Today & Make it Happen.
           </h2>
           <a href='#' className='block text-base text-[#FF8A71] font-medium leading-[30px] my-4 cursor-pointer sm:mt-[34px]'>Request Early Access to Get Started</a>

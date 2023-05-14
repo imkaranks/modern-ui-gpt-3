@@ -17,7 +17,7 @@ function Possibilities() {
           <h2 className='text-gradient text-[34px] leading-[45px] max-w-[426px] font-extrabold tracking-tighter mt-[10px]' id="gpt3__possibilities-title">
             The possibilities are beyond your imagination
           </h2>
-          <p className='text-base text-content leading-[30px] font-normal mt-[23px]' id="gpt3__possibilities-desc">
+          <p className='max-w-[479px] text-base text-content leading-[30px] font-normal mt-[23px]' id="gpt3__possibilities-desc">
             Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment. Party we years to order allow asked of.
           </p>
           <a href='#' className='block text-base text-[#FF8A71] font-medium leading-[30px] mt-[31px] cursor-pointer'>Request Early Access to Get Started</a>
