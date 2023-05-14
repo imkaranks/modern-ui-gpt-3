@@ -6,6 +6,7 @@ import WhatGPT3 from './containers/WhatGPT3';
 import Features from './containers/Features';
 import Possibilities from './containers/Possibilities';
 import Register from './containers/Register';
+import Blog from './containers/Blog';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Features />
         <Possibilities />
         <Register />
+        <Blog />
       </main>
     </>
   );
