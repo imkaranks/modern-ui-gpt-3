@@ -7,6 +7,7 @@ import Features from './containers/Features';
 import Possibilities from './containers/Possibilities';
 import Register from './containers/Register';
 import Blog from './containers/Blog';
+import Footer from './containers/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Register />
         <Blog />
       </main>
+      <Footer />
     </>
   );
 }
