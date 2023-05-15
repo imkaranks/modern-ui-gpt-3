@@ -1,10 +1,10 @@
 import React from 'react';
 import Article from '../components/Article';
-import blogImg1 from '../assets/blog01.png';
-import blogImg2 from '../assets/blog02.png';
-import blogImg3 from '../assets/blog03.png';
-import blogImg4 from '../assets/blog04.png';
-import blogImg5 from '../assets/blog05.png';
+import blogImg1 from '../assets/images/blog01.png';
+import blogImg2 from '../assets/images/blog02.png';
+import blogImg3 from '../assets/images/blog03.png';
+import blogImg4 from '../assets/images/blog04.png';
+import blogImg5 from '../assets/images/blog05.png';
 
 function Blog() {
   return (

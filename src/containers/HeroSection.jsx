@@ -1,6 +1,6 @@
 import React from 'react';
-import heroImg from '../assets/ai.png';
-import people from '../assets/people.png';
+import heroImg from '../assets/images/ai.png';
+import people from '../assets/images/people.png';
 
 function HeroSection() {
   return (

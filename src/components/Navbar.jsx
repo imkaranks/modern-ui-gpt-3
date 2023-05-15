@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import sitelogo from '../assets/logo.svg';
+import sitelogo from '../assets/images/logo.svg';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
 
 const NavLinks = () => (

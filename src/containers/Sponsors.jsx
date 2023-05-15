@@ -1,9 +1,9 @@
 import React from 'react';
-import google from '../assets/google.png';
-import slack from '../assets/slack.png';
-import atlassian from '../assets/atlassian.png';
-import dropbox from '../assets/dropbox.png';
-import shopify from '../assets/shopify.png';
+import google from '../assets/images/google.png';
+import slack from '../assets/images/slack.png';
+import atlassian from '../assets/images/atlassian.png';
+import dropbox from '../assets/images/dropbox.png';
+import shopify from '../assets/images/shopify.png';
 
 function Sponsors() {
   return (
