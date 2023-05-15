@@ -5,10 +5,18 @@ import blogImg2 from '../assets/images/blog02.webp';
 import blogImg3 from '../assets/images/blog03.webp';
 import blogImg4 from '../assets/images/blog04.webp';
 import blogImg5 from '../assets/images/blog05.webp';
+import { motion } from 'framer-motion';
+import { sectionVariant } from '../utils/motion';
 
 function Blog() {
   return (
-    <section className='py-16' id='blog' aria-labelledby='gpt3__blog-title'>
+    <motion.section
+      className='py-16' id='blog' aria-labelledby='gpt3__blog-title'
+      variants={sectionVariant}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+    >
       <div className="w-11/12 max-w-7xl mx-auto grid gap-[50.68px] sm:grid-cols-2 md:grid-cols-3">
         <h2 className="col-span-full text-4xl text-gradient md:leading-[75px] font-extrabold tracking-tighter sm:text-5xl md:text-6xl" id='gpt3__blog-title'>
           A lot is happening, We are blogging about it.
@@ -40,7 +48,7 @@ function Blog() {
           title='GPT-3 and Open  AI is the future. Let us exlore how it is?'
         />
       </div>
-    </section>
+    </motion.section>
   );
 }
 

@@ -1,9 +1,17 @@
 import React from 'react';
 import possibilityImg from '../assets/images/possibility.webp';
+import { motion } from 'framer-motion';
+import { sectionVariant } from '../utils/motion';
 
 function Possibilities() {
   return (
-    <section className='py-16' aria-labelledby='gpt3__possibilities-title' aria-describedby='gpt3__possibilities-desc' id='possibility'>
+    <motion.section
+      className='py-16' aria-labelledby='gpt3__possibilities-title' aria-describedby='gpt3__possibilities-desc' id='possibility'
+      variants={sectionVariant}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+    >
       <div className="w-11/12 max-w-7xl mx-auto grid gap-4 items-center sm:grid-cols-2">
         <div>
           <img
@@ -23,7 +31,7 @@ function Possibilities() {
           <a href='#' className='block text-base text-accent-300 font-medium leading-[30px] mt-[31px] cursor-pointer'>Request Early Access to Get Started</a>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

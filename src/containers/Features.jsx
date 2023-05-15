@@ -1,9 +1,17 @@
 import React from 'react';
 import Feature from '../components/Feature';
+import { motion } from 'framer-motion';
+import { sectionVariant } from '../utils/motion';
 
 function Features() {
   return (
-    <section className='py-16' aria-labelledby='gpt3__features-title' id='features'>
+    <motion.section
+      className='py-16' aria-labelledby='gpt3__features-title' id='features'
+      variants={sectionVariant}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+    >
       <div className="w-11/12 max-w-7xl mx-auto grid gap-4 sm:grid-cols-2">
         <div>
           <h2 className='max-w-[426px] text-gradient text-[30px] leading-[45px] tracking-tighter font-extrabold' id="gpt3__features-title">
@@ -42,7 +50,7 @@ function Features() {
           />
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

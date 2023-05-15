@@ -1,9 +1,17 @@
 import React from 'react';
 import siteLogo from '../assets/images/logo.svg';
+import { motion } from 'framer-motion';
+import { sectionVariant } from '../utils/motion';
 
 function Footer() {
   return (
-    <footer className='bg-primary-800 py-[1.6875rem] text-white'>
+    <motion.footer
+      className='bg-primary-800 py-[1.6875rem] text-white'
+      variants={sectionVariant}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+    >
       <div className="w-11/12 max-w-7xl mx-auto">
         <a href="#" className="sr-only">Go back to top</a>
         <div className='flex flex-col items-center gap-8 py-12 sm:gap-10 sm:py-20 md:gap-14 md:py-28 lg:py-36 lg:gap-16'>
@@ -56,7 +64,7 @@ function Footer() {
           <small className='text-xs leading-[14.06px]'>© 2021 GPT-3. All rights reserved.</small>
         </div>
       </div>
-    </footer>
+    </motion.footer>
   );
 }
 
