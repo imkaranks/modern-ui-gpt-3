@@ -1,5 +1,5 @@
 import React from 'react';
-import possibilityImg from '../assets/images/possibility.png';
+import possibilityImg from '../assets/images/possibility.webp';
 
 function Possibilities() {
   return (

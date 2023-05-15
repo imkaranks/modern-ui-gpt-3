@@ -1,5 +1,5 @@
 import React from 'react';
-import heroImg from '../assets/images/ai.png';
+import heroImg from '../assets/images/ai.webp';
 import people from '../assets/images/people.png';
 
 function HeroSection() {
