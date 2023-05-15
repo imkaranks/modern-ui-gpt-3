@@ -3,7 +3,7 @@ import possibilityImg from '../assets/images/possibility.png';
 
 function Possibilities() {
   return (
-    <section className='py-16' aria-labelledby='gpt3__possibilities-title' aria-describedby='gpt3__possibilities-desc'>
+    <section className='py-16' aria-labelledby='gpt3__possibilities-title' aria-describedby='gpt3__possibilities-desc' id='possibility'>
       <div className="w-11/12 max-w-7xl mx-auto grid gap-4 items-center sm:grid-cols-2">
         <div>
           <img
@@ -20,7 +20,7 @@ function Possibilities() {
           <p className='max-w-[479px] text-base text-content leading-[30px] font-normal mt-[23px]' id="gpt3__possibilities-desc">
             Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment. Party we years to order allow asked of.
           </p>
-          <a href='#' className='block text-base text-[#FF8A71] font-medium leading-[30px] mt-[31px] cursor-pointer'>Request Early Access to Get Started</a>
+          <a href='#' className='block text-base text-accent-300 font-medium leading-[30px] mt-[31px] cursor-pointer'>Request Early Access to Get Started</a>
         </div>
       </div>
     </section>

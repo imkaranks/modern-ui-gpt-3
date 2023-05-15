@@ -13,7 +13,7 @@ function Register() {
           </p>
         </div>
         <div>
-          <button className="text-base text-white font-bold leading-[30px] py-4 px-8 bg-black rounded-full">Get Started</button>
+          <button className="text-base text-white font-bold leading-[30px] py-4 px-8 bg-black rounded-full hover:transition-colors hover:bg-accent-400">Get Started</button>
         </div>
       </div>
     </section>

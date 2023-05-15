@@ -25,7 +25,7 @@ function HeroSection() {
               placeholder='Your Email Address'
               className='bg-primary-700 w-full flex-[0.7] min-h-[50px] text-xs leading-6 text-white border-2 border-primary-700 outline-none rounded-tl-md rounded-bl-md px-4 sm:text-base md:text-xl sm:leading-[27px]'
             />
-            <button className='w-full flex-[0.3] min-h-[50px] bg-[#FF4820] text-xs leading-6 text-white font-bold px-4 outline-0 border-none rounded-tr-md rounded-br-md cursor-pointer sm:text-base md:text-xl sm:leading-[22px]' type="submit">Get Started</button>
+            <button className='w-full flex-[0.3] min-h-[50px] bg-accent-400 text-xs leading-6 text-white font-bold px-4 outline-0 border-none rounded-tr-md rounded-br-md cursor-pointer sm:text-base md:text-xl sm:leading-[22px] hover:transition-colors hover:bg-accent-300' type="submit">Get Started</button>
           </div>
 
           <div className="flex flex-col gap-4 sm:flex-row items-center">

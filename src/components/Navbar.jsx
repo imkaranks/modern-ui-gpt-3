@@ -47,10 +47,10 @@ function Navbar() {
 
         <div className="hidden sm:flex items-center ml-auto">
           <button className='text-white font-primary font-medium text-lg leading-6 capitalize mx-4 cursor-pointer'>sign in</button>
-          <button type='button' className='py-2 px-4 bg-[#ff4820] text-white text-lg font-primary font-medium leading-6 capitalize rounded-md border-none cursor-pointer'>sign up</button>
+          <button type='button' className='py-2 px-4 bg-accent-400 text-white text-lg font-primary font-medium leading-6 capitalize rounded-md border-none cursor-pointer hover:transition-colors hover:bg-accent-300'>sign up</button>
         </div>
 
-        <button className='ml-auto sm:ml-0 lg:hidden' onClick={() => setIsExpanded(!isExpanded)}>
+        <button className='bg-primary-800 rounded-full aspect-square w-10 flex justify-center items-center z-50 ml-auto sm:ml-0 lg:hidden' onClick={() => setIsExpanded(!isExpanded)}>
           <span className="sr-only">{isExpanded ? 'Close' : 'Open'}Menu</span>
           {
             isExpanded
@@ -61,15 +61,15 @@ function Navbar() {
 
         {
           isExpanded && (
-            <div className={`absolute top-12 right-4 bg-primary-800 flex flex-col gap-4 min-w-[210px] p-8 mt-4 rounded-md shadow-sm sm:top-20 sm:right-8 lg:hidden`}>
+            <div className={`gpt3__navbar-mobile | fixed z-40 inset-0 bg-primary-800 flex flex-col gap-4 justify-center items-center text-center p-8 lg:hidden`} onClick={() => setIsExpanded(!isExpanded)}>
               <nav aria-label="Mobile Navigation">
-                <ul className="list-none flex flex-col gap-4">
+                <ul className="list-none flex flex-col gap-4 sm:gap-8">
                   <NavLinks />
                 </ul>
               </nav>
               <div className="flex flex-col gap-4 sm:hidden">
                 <button className='text-white font-primary font-medium text-lg leading-6 capitalize mx-4 cursor-pointer'>sign in</button>
-                <button type='button' className='py-2 px-4 bg-[#ff4820] text-white text-lg font-primary font-medium leading-6 capitalize rounded-md border-none cursor-pointer'>sign up</button>
+                <button type='button' className='py-2 px-4 bg-accent-400 text-white text-lg font-primary font-medium leading-6 capitalize rounded-md border-none cursor-pointer hover:transition-colors hover:bg-accent-300'>sign up</button>
               </div>
             </div>
           )

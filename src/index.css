@@ -6,6 +6,19 @@
     @apply bg-gradient-primary bg-clip-text;
     -webkit-text-fill-color: transparent;
   }
+  .animate-subtle-bg {
+    background-size: 200%;
+    animation: subtle-moving-bg 1000ms linear infinite alternate;
+  }
+}
+
+@keyframes subtle-moving-bg {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
 }
 
 @tailwind utilities;

@@ -9,7 +9,7 @@ function WhatGPT3() {
         <Feature
           title='What is GPT-3'
           headingLvl='h2'
-          fontSizes={[ '2xl', 'base' ]}
+          fontSizes={[ 'text-xl md:text-2xl', 'text-base' ]}
           desc='We so opinion friends me message as delight. Whole front do of plate heard oh ought. His defective nor convinced residence own. Connection has put impossible own apartments boisterous. At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by.'
           customStyles='col-span-full flex-col md:flex-row'
         />
@@ -24,21 +24,21 @@ function WhatGPT3() {
         <Feature
           title="Chatbots"
           headingLvl='h3'
-          fontSizes={[ '2xl', 'base' ]}
+          fontSizes={[ 'text-xl md:text-2xl', 'text-base' ]}
           desc="We so opinion friends me message as delight. Whole front do of plate heard oh ought."
         />
 
         <Feature
           title="Knowledgebase"
           headingLvl='h3'
-          fontSizes={[ '2xl', 'base' ]}
+          fontSizes={[ 'text-xl md:text-2xl', 'text-base' ]}
           desc="At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b"
         />
 
         <Feature
           title="Education"
           headingLvl='h3'
-          fontSizes={[ '2xl', 'base' ]}
+          fontSizes={[ 'text-xl md:text-2xl', 'text-base' ]}
           desc="At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b"
         />
       </div>

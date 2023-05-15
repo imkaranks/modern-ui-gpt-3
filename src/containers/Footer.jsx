@@ -10,7 +10,7 @@ function Footer() {
           <h2 className="text-gradient text-3xl font-extrabold text-center sm:text-4xl md:text-5xl lg:text-6xl">
             Do you want to step in to the future before others
           </h2>
-          <button className='text-sm text-white py-2 px-4 border border-white sm:text-base'>
+          <button className='text-sm text-white py-2 px-4 border border-white hover:transition-colors hover:border-accent-400 hover:text-accent-400 sm:text-base'>
             Request Early Access
           </button>
         </div>

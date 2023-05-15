@@ -13,7 +13,11 @@ export default {
           900: '#040C18'
         },
         'content': '#81AFDD',
-        'subhead': '#FF8A71'
+        'subhead': '#FF8A71',
+        'accent': {
+          300: '#FF8A71',
+          400: '#FF4820'
+        }
       },
       fontFamily: {
         'primary': ['Manrope', 'sans-serif']

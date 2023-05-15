@@ -8,9 +8,9 @@ import blogImg5 from '../assets/images/blog05.png';
 
 function Blog() {
   return (
-    <section className='py-16'>
+    <section className='py-16' id='blog' aria-labelledby='gpt3__blog-title'>
       <div className="w-11/12 max-w-7xl mx-auto grid gap-[50.68px] sm:grid-cols-2 md:grid-cols-3">
-        <h2 className="col-span-full text-4xl text-gradient md:leading-[75px] font-extrabold tracking-tighter sm:text-5xl md:text-6xl">
+        <h2 className="col-span-full text-4xl text-gradient md:leading-[75px] font-extrabold tracking-tighter sm:text-5xl md:text-6xl" id='gpt3__blog-title'>
           A lot is happening, We are blogging about it.
         </h2>
         <Article
