@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { sectionVariant } from '../utils/motion';
+import { sectionVariant, textVariant } from '../utils/motion';
 
 function Register() {
   return (
@@ -16,9 +16,15 @@ function Register() {
           <h2 className="text-xs text-[#0E0E0E] font-medium leading-[30px]">
             Request Early Access to Get Started
           </h2>
-          <p className="text-[24px] text-black font-extrabold">
+          <motion.p
+            className="text-[24px] text-black font-extrabold"
+            variants={textVariant}
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{once: true}}
+          >
             Register today & start exploring the endless possiblities.
-          </p>
+          </motion.p>
         </div>
         <div>
           <button className="text-base text-white font-bold leading-[30px] py-4 px-8 bg-black rounded-full hover:transition-colors hover:bg-accent-400">Get Started</button>

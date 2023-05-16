@@ -1,6 +1,8 @@
 import React from 'react';
 import heroImg from '../assets/images/ai.webp';
 import people from '../assets/images/people.png';
+import { motion } from 'framer-motion';
+import { textVariant, imageVariant } from '../utils/motion';
 
 function HeroSection() {
   return (
@@ -8,9 +10,16 @@ function HeroSection() {
       <div className="w-11/12 max-w-7xl mx-auto grid md:grid-cols-4">
         <div className="md:col-span-2">
           <div className="max-w-[614px]">
-            <h1 className='text-gradient font-extrabold text-4xl leading-none tracking-tighter md:text-5xl lg:text-[62px]' id="gpt3__headline">
+            <motion.h1
+              className='text-gradient font-extrabold text-4xl leading-none tracking-tighter md:text-5xl lg:text-[62px]' id="gpt3__headline"
+              variants={textVariant}
+              initial="offscreen"
+              whileInView="onscreen"
+              transition={{delay: 0.3}}
+              viewport={{once: true}}
+            >
               Let’s Build Something amazing with GPT-3 OpenAI
-            </h1>
+            </motion.h1>
             <p className='text-sm leading-[24px] text-content mt-6 md:text-base lg:text-xl' id="gpt3__desc">
               Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment. Party we years to order allow asked of.
             </p>
@@ -38,10 +47,14 @@ function HeroSection() {
         </div>
 
         <div className="md:col-span-2">
-          <img
+          <motion.img
             src={heroImg}
             alt=""
             className='w-full h-full max-h-[466px] object-contain'
+            variants={imageVariant('right')}
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true }}
           />
         </div>
       </div>

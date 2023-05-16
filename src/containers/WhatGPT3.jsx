@@ -2,7 +2,7 @@ import React from 'react';
 import Feature from '../components/Feature';
 import './WhatGPT3.css';
 import { motion } from 'framer-motion';
-import { sectionVariant } from '../utils/motion';
+import { sectionVariant, textVariant } from '../utils/motion';
 
 function WhatGPT3() {
   return (
@@ -23,9 +23,15 @@ function WhatGPT3() {
         />
 
         <div className="col-span-full flex flex-col items-start my-4 justify-between sm:my-8 lg:my-[41px] lg:flex-row lg:items-center">
-          <h2 className="text-gradient font-extrabold text-[28px] leading-[40px] max-w-[510px] sm:text-[32px] sm:leading-[45px]">
+          <motion.h2
+            className="text-gradient font-extrabold text-[28px] leading-[40px] max-w-[510px] sm:text-[32px] sm:leading-[45px]"
+            variants={textVariant}
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{once: true}}
+          >
             The possibilities are beyond your imagination
-          </h2>
+          </motion.h2>
           <a href="#" className='font-medium text-base leading-[30px] text-subhead cursor-pointer mt-4 lg:mt-0'>Explore The Library</a>
         </div>
 

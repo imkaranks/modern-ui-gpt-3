@@ -6,7 +6,7 @@ import blogImg3 from '../assets/images/blog03.webp';
 import blogImg4 from '../assets/images/blog04.webp';
 import blogImg5 from '../assets/images/blog05.webp';
 import { motion } from 'framer-motion';
-import { sectionVariant } from '../utils/motion';
+import { sectionVariant, textVariant } from '../utils/motion';
 
 function Blog() {
   return (
@@ -18,9 +18,15 @@ function Blog() {
       viewport={{ once: true }}
     >
       <div className="w-11/12 max-w-7xl mx-auto grid gap-[50.68px] sm:grid-cols-2 md:grid-cols-3">
-        <h2 className="col-span-full text-4xl text-gradient md:leading-[75px] font-extrabold tracking-tighter sm:text-5xl md:text-6xl" id='gpt3__blog-title'>
+        <motion.h2
+          className="col-span-full text-4xl text-gradient md:leading-[75px] font-extrabold tracking-tighter sm:text-5xl md:text-6xl" id='gpt3__blog-title'
+          variants={textVariant}
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{once: true}}
+        >
           A lot is happening, We are blogging about it.
-        </h2>
+        </motion.h2>
         <Article
           image={blogImg1}
           posted={['2021-09-26', 'Sep 26, 2021']}

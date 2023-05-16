@@ -1,7 +1,7 @@
 import React from 'react';
 import Feature from '../components/Feature';
 import { motion } from 'framer-motion';
-import { sectionVariant } from '../utils/motion';
+import { sectionVariant, textVariant } from '../utils/motion';
 
 function Features() {
   return (
@@ -14,9 +14,15 @@ function Features() {
     >
       <div className="w-11/12 max-w-7xl mx-auto grid gap-4 sm:grid-cols-2">
         <div>
-          <h2 className='max-w-[426px] text-gradient text-[30px] leading-[45px] tracking-tighter font-extrabold' id="gpt3__features-title">
+          <motion.h2
+            className='max-w-[426px] text-gradient text-[30px] leading-[45px] tracking-tighter font-extrabold' id="gpt3__features-title"
+            variants={textVariant}
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{once: true}}
+          >
             The Future is Now and You Just Need To Realize It. Step into Future Today & Make it Happen.
-          </h2>
+          </motion.h2>
           <a href='#' className='block text-base text-accent-300 font-medium leading-[30px] my-4 cursor-pointer sm:mt-[34px]'>Request Early Access to Get Started</a>
         </div>
         <div className='flex flex-col gap-5'>

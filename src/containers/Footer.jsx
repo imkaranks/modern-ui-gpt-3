@@ -1,7 +1,7 @@
 import React from 'react';
 import siteLogo from '../assets/images/logo.svg';
 import { motion } from 'framer-motion';
-import { sectionVariant } from '../utils/motion';
+import { sectionVariant, textVariant } from '../utils/motion';
 
 function Footer() {
   return (
@@ -15,9 +15,15 @@ function Footer() {
       <div className="w-11/12 max-w-7xl mx-auto">
         <a href="#" className="sr-only">Go back to top</a>
         <div className='flex flex-col items-center gap-8 py-12 sm:gap-10 sm:py-20 md:gap-14 md:py-28 lg:py-36 lg:gap-16'>
-          <h2 className="text-gradient text-3xl font-extrabold text-center sm:text-4xl md:text-5xl lg:text-6xl">
+          <motion.h2
+            className="text-gradient text-3xl font-extrabold text-center sm:text-4xl md:text-5xl lg:text-6xl"
+            variants={textVariant}
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{once: true}}
+          >
             Do you want to step in to the future before others
-          </h2>
+          </motion.h2>
           <button className='text-sm text-white py-2 px-4 border border-white hover:transition-colors hover:border-accent-400 hover:text-accent-400 sm:text-base'>
             Request Early Access
           </button>
