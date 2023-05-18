@@ -11,7 +11,7 @@ function WhatGPT3() {
       variants={sectionVariant}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true }}
+      transition={{staggerChildren: 0.3}}
     >
       <div className="whatgpt3__content | w-11/12 max-w-7xl mx-auto p-4 sm:p-8 md:p-12 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
         <Feature

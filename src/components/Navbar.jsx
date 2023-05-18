@@ -1,24 +1,46 @@
 import React, { useState } from 'react';
 import sitelogo from '../assets/images/logo.svg';
-import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
+import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+import { motion } from 'framer-motion';
+
+const navListItem = {
+  hide: {
+    opacity: 0.25,
+    x: '-100vw',
+  },
+  show: {
+    opacity: 1,
+    x: 0,
+  }
+}
 
 const NavLinks = () => (
   <>
-    <li>
+    <motion.li
+      variants={navListItem}
+    >
       <a href="#" className='text-white font-medium text-lg leading-6 capitalize cursor-pointer'>Home</a>
-    </li>
-    <li>
+    </motion.li>
+    <motion.li
+      variants={navListItem}
+    >
       <a href="#what-gpt3" className='text-white font-medium text-lg leading-6 capitalize cursor-pointer'>What is GPT3</a>
-    </li>
-    <li>
+    </motion.li>
+    <motion.li
+      variants={navListItem}
+    >
       <a href="#possibility" className='text-white font-medium text-lg leading-6 capitalize cursor-pointer'>Open AI</a>
-    </li>
-    <li>
+    </motion.li>
+    <motion.li
+      variants={navListItem}
+    >
       <a href="#features" className='text-white font-medium text-lg leading-6 capitalize cursor-pointer'>Case Studies</a>
-    </li>
-    <li>
+    </motion.li>
+    <motion.li
+      variants={navListItem}
+    >
       <a href="#blog" className='text-white font-medium text-lg leading-6 capitalize cursor-pointer'>Libraries</a>
-    </li>
+    </motion.li>
   </>
 );
 
@@ -40,9 +62,14 @@ function Navbar() {
         </div>
 
         <nav className='hidden lg:flex' id="primary-navigation" aria-label='Primary Navigation'>
-          <ul className="list-none flex gap-[2.875rem]">
+          <motion.ul
+            className="list-none flex gap-[2.875rem]"
+            initial="hide"
+            animate="show"
+            transition={{staggerChildren: 0.2}}
+          >
             <NavLinks />
-          </ul>
+          </motion.ul>
         </nav>
 
         <div className="hidden sm:flex items-center ml-auto">
@@ -63,9 +90,14 @@ function Navbar() {
           isExpanded && (
             <div className={`gpt3__navbar-mobile | fixed z-40 inset-0 bg-primary-800 flex flex-col gap-4 justify-center items-center text-center p-8 lg:hidden`} onClick={() => setIsExpanded(!isExpanded)}>
               <nav aria-label="Mobile Navigation">
-                <ul className="list-none flex flex-col gap-4 sm:gap-8">
+                <motion.ul
+                  className="list-none flex flex-col gap-4 sm:gap-8"
+                  initial="hide"
+                  animate="show"
+                  transition={{staggerChildren: 0.2}}
+                >
                   <NavLinks />
-                </ul>
+                </motion.ul>
               </nav>
               <div className="flex flex-col gap-4 sm:hidden">
                 <button className='text-white font-primary font-medium text-lg leading-6 capitalize mx-4 cursor-pointer'>sign in</button>

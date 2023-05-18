@@ -12,11 +12,11 @@ const sectionVariant = {
 const cardVariant = {
   hidden: {
     opacity: 0,
-    y: 50,
+    x: -50,
   },
   show: {
     opacity: 1,
-    y: 0,
+    x: 0,
   }
 }
 

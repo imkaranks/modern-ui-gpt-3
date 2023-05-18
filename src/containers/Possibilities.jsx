@@ -10,9 +10,13 @@ function Possibilities() {
       variants={sectionVariant}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true }}
     >
-      <div className="w-11/12 max-w-7xl mx-auto grid gap-4 items-center sm:grid-cols-2">
+      <motion.div
+        className="w-11/12 max-w-7xl mx-auto grid gap-4 items-center sm:grid-cols-2"
+        initial="hidden"
+        whileInView="show"
+        transition={{staggerChildren: 0.2}}
+      >
         <div>
           <motion.img
             src={possibilityImg}
@@ -21,7 +25,6 @@ function Possibilities() {
             variants={imageVariant('left')}
             initial="offscreen"
             whileInView="onscreen"
-            viewport={{ once: true }}
           />
         </div>
         <div>
@@ -31,7 +34,6 @@ function Possibilities() {
             variants={textVariant}
             initial="offscreen"
             whileInView="onscreen"
-            viewport={{once: true}}
           >
             The possibilities are beyond your imagination
           </motion.h2>
@@ -40,7 +42,7 @@ function Possibilities() {
           </p>
           <a href='#' className='block text-base text-accent-300 font-medium leading-[30px] mt-[31px] cursor-pointer'>Request Early Access to Get Started</a>
         </div>
-      </div>
+      </motion.div>
     </motion.section>
   );
 }

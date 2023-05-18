@@ -7,6 +7,19 @@ import shopify from '../assets/images/shopify.png';
 import { motion } from 'framer-motion';
 import { sectionVariant } from '../utils/motion';
 
+const sponsor = {
+  hide: {
+    opacity: 0,
+    x: -20,
+    y: -20
+  },
+  show: {
+    opacity: 1,
+    x: 0,
+    y: 0
+  }
+}
+
 function Sponsors() {
   return (
     <motion.section
@@ -16,38 +29,58 @@ function Sponsors() {
       whileInView="show"
       viewport={{ once: true }}
     >
-      <div className="max-w-7xl mx-auto flex flex-wrap justify-center items-center">
-        <div className='flex-1 max-w-[150px] min-w-[120px] m-4 flex justify-center items-center'>
+      <motion.div
+        className="max-w-7xl mx-auto flex flex-wrap justify-center items-center"
+        initial="hide"
+        whileInView="show"
+        transition={{staggerChildren: 0.1}}
+      >
+        <motion.div
+          className='flex-1 max-w-[150px] min-w-[120px] m-4 flex justify-center items-center'
+          variants={sponsor}
+        >
           <img
             src={google}
             alt="google-logo"
           />
-        </div>
-        <div className='flex-1 max-w-[150px] min-w-[120px] m-4 flex justify-center items-center'>
+        </motion.div>
+        <motion.div
+          className='flex-1 max-w-[150px] min-w-[120px] m-4 flex justify-center items-center'
+          variants={sponsor}
+        >
           <img
             src={slack}
             alt="slack-logo"
           />
-        </div>
-        <div className='flex-1 max-w-[150px] min-w-[120px] m-4 flex justify-center items-center'>
+        </motion.div>
+        <motion.div
+          className='flex-1 max-w-[150px] min-w-[120px] m-4 flex justify-center items-center'
+          variants={sponsor}
+        >
           <img
             src={atlassian}
             alt="atlassian-logo"
           />
-        </div>
-        <div className='flex-1 max-w-[150px] min-w-[120px] m-4 flex justify-center items-center'>
+        </motion.div>
+        <motion.div
+          className='flex-1 max-w-[150px] min-w-[120px] m-4 flex justify-center items-center'
+          variants={sponsor}
+        >
           <img
             src={dropbox}
             alt="dropbox-logo"
           />
-        </div>
-        <div className='flex-1 max-w-[150px] min-w-[120px] m-4 flex justify-center items-center'>
+        </motion.div>
+        <motion.div
+          className='flex-1 max-w-[150px] min-w-[120px] m-4 flex justify-center items-center'
+          variants={sponsor}
+        >
           <img
             src={shopify}
             alt="shopify-logo"
           />
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </motion.section>
   );
 }

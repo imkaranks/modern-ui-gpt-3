@@ -25,7 +25,12 @@ function Features() {
           </motion.h2>
           <a href='#' className='block text-base text-accent-300 font-medium leading-[30px] my-4 cursor-pointer sm:mt-[34px]'>Request Early Access to Get Started</a>
         </div>
-        <div className='flex flex-col gap-5'>
+        <motion.div
+          className='flex flex-col gap-5'
+          initial="hidden"
+          whileInView="show"
+          transition={{staggerChildren: 0.2}}
+        >
           <Feature
             title='Improving end distrusts instantly'
             headingLvl='h3'
@@ -54,7 +59,7 @@ function Features() {
             desc='Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now. In built table in an rapid blush.'
             customStyles='flex-col pt-1 md:flex-row'
           />
-        </div>
+        </motion.div>
       </div>
     </motion.section>
   );
