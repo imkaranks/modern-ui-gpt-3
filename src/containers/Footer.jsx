@@ -28,17 +28,18 @@ function Footer() {
             Request Early Access
           </button>
         </div>
-        <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-[1.5fr,_1fr,_1fr,_1fr]">
+        <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-[1.5fr,_1fr,_1fr,_1fr]">
           <div>
             <a href="#">
               <img
                 src={siteLogo}
                 alt="site logo"
+                role='image'
               />
             </a>
-            <p className='text-xs leading-[14.06px] max-w-[168px] mt-4 md:mt-[26px]'>
-              Crechterwoord K12 182 DK Alknjkcb, All Rights Reserved
-            </p>
+            <div className='text-xs leading-[14.06px] max-w-[168px] mt-4 md:mt-[26px]'>
+              <address className='inline not-italic'>Crechterwoord K12 182 DK Alknjkcb</address>, All Rights Reserved
+            </div>
           </div>
           <div>
             <h3 className="text-sm leading-4 font-bold">Links</h3>
@@ -60,14 +61,14 @@ function Footer() {
           <div>
             <h3 className="text-sm leading-4 font-bold">Get in touch</h3>
             <ul className="list-none mt-4 flex flex-col gap-2 sm:gap-4 md:mt-9">
-              <li><a href="#" className="decoration-none text-xs leading-[14.06px]">Crechterwoord K12 182 DK Alknjkcb</a></li>
-              <li><a href="#" className="decoration-none text-xs leading-[14.06px]">085-132567</a></li>
-              <li><a href="#" className="decoration-none text-xs leading-[14.06px]">info@payme.net</a></li>
+              <li><address className="inline not-italic text-xs leading-[14.06px]">Crechterwoord K12 182 DK Alknjkcb</address></li>
+              <li><address className="inline not-italic text-xs leading-[14.06px]">085-132567</address></li>
+              <li><address className="inline not-italic text-xs leading-[14.06px]">info@payme.net</address></li>
             </ul>
           </div>
         </div>
         <div className="text-center mt-8 sm:mt-12 md:mt-16 lg:mt-20">
-          <small className='text-xs leading-[14.06px]'>© 2021 GPT-3. All rights reserved.</small>
+          <small className='text-xs leading-[14.06px]'>© {new Date().getFullYear()} GPT-3. All rights reserved.</small>
         </div>
       </div>
     </motion.footer>
