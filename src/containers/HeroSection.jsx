@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import heroImg from '../assets/images/ai.webp';
 import people from '../assets/images/people.png';
 import { motion } from 'framer-motion';
 import { textVariant, imageVariant } from '../utils/motion';
 
 function HeroSection() {
+  const [imgLoading, setImgLoading] = useState(true);
+
   return (
     <section className='self-center py-16' aria-labelledby='gpt3__headline' aria-describedby='gpt3__desc'>
       <div className="w-11/12 max-w-7xl mx-auto grid md:grid-cols-4">
@@ -46,15 +48,16 @@ function HeroSection() {
           </div>
         </div>
 
-        <div className="md:col-span-2">
+        <div className={`md:col-span-2 ${imgLoading ? 'bg-[url(/ai-small.webp)] bg-no-repeat bg-contain bg-center' : ''}`}>
           <motion.img
             src={heroImg}
             alt=""
-            className='w-full h-full max-h-[466px] object-contain'
+            className={`${imgLoading ? 'opacity-0' : ''} w-full h-full max-h-[466px] object-contain`}
             variants={imageVariant('right')}
             initial="offscreen"
             whileInView="onscreen"
             viewport={{ once: true }}
+            onLoad={() => setImgLoading(false)}
           />
         </div>
       </div>
